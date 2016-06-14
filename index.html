@@ -201,7 +201,7 @@ $(function() {
  
  if(this.id=="CarouselButton")
  {
- $(".carousel").carousel().next();
+ $(".carousel").carousel("next");
  return false;}
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
