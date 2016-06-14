@@ -197,8 +197,8 @@ Ieder team geeft twee keer per dag een korte update en houdt de ontwikkelingen b
 	<!-- Smooth scrolling -->
 	<script>
 $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
- alert(this.id+" this.id");  
+  $('a[href*="#"]:not([href="#"])').click(function(e) {
+ alert(e.this.id+" e.this.id");  
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
